@@ -1,0 +1,12 @@
+edad = 45
+nombre = "Jose Vicente"
+#mi nombre = "Jose Vicente"
+#mi-nombre = 
+minombre = "Jose Vicente"
+miNombre = "Jose Vicente"
+mi_nombre = "Jose Vicente"
+mi_nombre2 = "Jose Vicente"
+m2i_nombre2 = "Jose Vicente"
+#2m2i_nombre2 = "Jose Vicente"
+mi_nombre = "Jose Vicente"
+MI_Nombre = "Jose Vicente"
