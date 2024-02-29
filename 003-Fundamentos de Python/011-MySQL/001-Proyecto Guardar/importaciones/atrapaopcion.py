@@ -1,3 +1,14 @@
+import mysql.connector
+
+conexion = mysql.connector.connect(
+    host="localhost",
+    user="programagestion",
+    password="programagestion",
+    database="programagestion"
+)
+
+cursor = conexion.cursor()
+
 def atrapaOpcion():
     opcion = input("Escoge una opcion: ")
     print(f"La opción escogida es: {opcion}")
@@ -11,8 +22,8 @@ def atrapaOpcion():
         nombre = input("Introduce el nombre: ")
         email = input("Introduce el email: ")
         telefono = input("Introduce el telefono: ")
-        nuevo_registro = {"nombre":nombre,"email":email,"telefono":telefono}
-        print(nuevo_registro)
+        cursor.execute(f"INSERT INTO CLIENTES VALUES (NULL,'{nombre}','{email}','{telefono}')")
+        conexion.commit()
     elif opcion == "4":
         print("Actualización de registros")
     elif opcion == "5":
